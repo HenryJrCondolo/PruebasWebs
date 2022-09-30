@@ -1,157 +1,60 @@
-/* Basics */
- 
-html, body {
+body {
+    background-image: url("https://lh3.googleusercontent.com/utkNnpCpZHNYeOswVJxLWHdo3Q4gg9L-NFzqq73s-53aQhp2EyeVpre0lBPubBBJoRX5VsLzi99OMQudOwEs6jdMuzUODtDj623xmLBuISWzBsm4PRsbl2BVhtmcv-a8Nkunt9-WoIL1qWFcSzujTFwlqD65HPhlp5aSvkJEoa-vfKUHpBniU0gZuM1zdIlPJgqHLvgViFNr53H4RlEmYRuRtlVZnH_r4WWJ8L4lzqu0WtsIKXBoxiG5uk5AdHXXtLZ52rpeVAWEbuNW_GinhwB9XJuKTh-H7yrDnn3j6gnjnVVM57-t7KGOVpoGixOoyAWB9ekItU2OqbndLLvZGmfbqo3FGJ3w_RnkdAaSfipqZlwe5zTi8FCRNCpXxsJWA9z9CMVWIxlpTpqK7qnn67nJpjNDxg18P_mZKT0bGujM-NyL7FwNzFW32gNWonSdp1K9J1Oi81MYdrHpMPzUok-HnyBZNFHjUjVb3Vx3pfqrO1Y803n-GRw3G-5l4zDOrCYdq4rvXjPyRBsvACrnVVGJNpaS6_kNTJ7L-MRG_CSxqhNrfk4x-OF-1dmAM2DjcwalPJVp6WXtVqWIgBJiuek_vs6WdmhVlG2vkwwjVP-FHyWuBGB0vzv1yYuFIAZiEu8n4MDBa6s6YetPw-yQmmTRYF4kbC-TGzqoY_7udTk5ltbkEQFuddD3XsUB3ZDtpXROgh_gE-7UEcNOEDBW0YYhjfJjrUnYaub4p2hvRgLyPlTmFdoGlxuhNAolN95_h5DEuef9xjAwuR3N1yLcj9_qBeS8aKKqZc7a6KUcY5jtNgdSplXKfYzIVuUue3clELjwbXepoM5vEZ0sWSlZtcJxelexodpJ_4IVwiDXJs2t99oUlqqE6M4WY4dQrN-XH2Fm6QpEKbTpsnqC-n6JRVkOAaSm9gidWq5BU9dCEfe8-EHMZ_Uihk2sJW_1BD6CbvNmBXBBqWo0lyBOU1tvYusYhyFX9zKCnHdzX_Bigei4W-Via2aDCxCU8N7KJMtsvwtz6yfX2ZzuTBSnJmGlsw=w1263-h947-no?authuser=1");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+    
+  }
+input[type="text"] {
     width: 100%;
-    height: 100%;
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    color: #444;
-    -webkit-font-smoothing: antialiased;
-    background: #f0f0f0;
-     
-   }
-    
-   #container {
-    position: fixed;
-    width: 340px;
-    height: 280px;
-    top: 50%;
-    left: 50%;
-    margin-top: -140px;
-    margin-left: -170px;
-    background: #fff;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
-    -webkit-animation-name: bounceIn;
-    -webkit-animation-fill-mode: both;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: bounceIn;
-    -moz-animation-fill-mode: both;
-    -moz-animation-duration: 1s;
-    -moz-animation-iteration-count: 1;
-    -moz-animation-timing-function: linear;
-    animation-name: bounceIn;
-    animation-fill-mode: both;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-   }
-    
-   form {
-    margin: 0 auto;
-    margin-top: 20px;
-   }
-    
-   label {
-    color: #555;
+    padding: 12px 20px;
+    margin: 8px 0;
     display: inline-block;
-    margin-left: 18px;
-    padding-top: 10px;
-    font-size: 14px;
-   }
-    
-   p a {
-    font-size: 11px;
-    color: #aaa;
-    float: right;
-    margin-top: -13px;
-    margin-right: 20px;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    transition: all .4s ease;
-   }
-    
-   p a:hover {
-    color: #555;
-   }
-    
-   input {
-    font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 12px;
-    outline: none;
-   }
-    
-   input[type=text],
-   input[type=password] {
-    color: #777;
-    padding-left: 10px;
-    margin: 10px;
-    margin-top: 12px;
-    margin-left: 18px;
-    width: 290px;
-    height: 35px;
-    border: 1px solid #c7d0d2;
-    border-radius: 2px;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #f5f7f8;
-    -webkit-transition: all .4s ease;
-    -moz-transition: all .4s ease;
-    transition: all .4s ease;
-   }
-    
-   input[type=text]:hover,
-   input[type=password]:hover {
-    border: 1px solid #b6bfc0;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .7), 0 0 0 5px #f5f7f8;
-   }
-    
-   input[type=text]:focus,
-   input[type=password]:focus {
-    border: 1px solid #a8c9e4;
-    box-shadow: inset 0 1.5px 3px rgba(190, 190, 190, .4), 0 0 0 5px #e6f2f9;
-   }
-    
-   #lower {
-    background: #ecf2f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
     width: 100%;
-    height: 69px;
-    margin-top: 20px;
-    box-shadow: inset 0 1px 1px #fff;
-    border-top: 1px solid #ccc;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-   }
-    
-   input[type=checkbox] {
-    margin-left: 20px;
-    margin-top: 30px;
-   }
-    
-   .check {
-    margin-left: 3px;
-    font-size: 11px;
-    color: #444;
-    text-shadow: 0 1px 0 #fff;
-   }
-    
-   input[type=submit] {
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
-    width: 80px;
-    height: 30px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #fff;
-    background-color: #acd6ef; /*IE fallback*/
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#acd6ef), to(#6ec2e8));
-    background-image: -moz-linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-    background-image: linear-gradient(top left 90deg, #acd6ef 0%, #6ec2e8 100%);
-    border-radius: 30px;
-    border: 1px solid #66add6;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, .3), inset 0 1px 0 rgba(255, 255, 255, .5);
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
-   }
-    
-   input[type=submit]:hover {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#b6e2ff), to(#6ec2e8));
-    background-image: -moz-linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-    background-image: linear-gradient(top left 90deg, #b6e2ff 0%, #6ec2e8 100%);
-   }
-    
-   input[type=submit]:active {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#6ec2e8), to(#b6e2ff));
-    background-image: -moz-linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-    background-image: linear-gradient(top left 90deg, #6ec2e8 0%, #b6e2ff 100%);
-   }
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .box {
+    border-radius: 5px;
+    background-color: white;
+    padding: 12px 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    height: 428px;
+    width: 400px;
+    position: absolute;
+    top: 50%;/*Para que se centre verticalmente*/
+    left: 50%;/*Para que se centre*/
+    transform: translate(-50%, -50%);/*Para que se centre*/
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }

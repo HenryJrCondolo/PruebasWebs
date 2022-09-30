@@ -1,0 +1,129 @@
+body{
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+}
+.button{
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.aceptar{
+    background-color: rgb(0, 174, 255);
+    color: white;
+}
+.cancelar{
+    background-color: rgb(123, 123, 123);
+    color: white;
+}
+.caja{
+    /*Ajustes bordes*/
+    border-style: groove;
+    border-top: 0ch;
+    border-color: rgb(223, 182, 70);
+    border-radius: 5px; /*Borde redondeado*/
+    background-color: beige;
+    color: rgb(0, 0, 0);
+    
+}
+.contenido{
+    padding: 10px;
+}
+.footer{
+    padding: 10px;
+}
+a{
+    color: pink;
+    background-color: rgb(47, 0, 255);
+    border-radius: 15px;
+}
+a:link{
+    color: rgb(255, 1, 158);
+    /*letter-spacing: 3px;Espaciado entre letras*/
+}
+a:visited{
+    color: rgb(146, 9, 156);
+}
+a:hover{
+    color: rgb(0, 174, 255);
+    background-color: blueviolet;
+}
+a:active{
+    color: rgb(112, 112, 112);
+}
+p{
+    /*max-width: 350px;/*Ancho maximo*
+    background-color: red;
+    margin: auto;/*Centrado*
+    position: fixed;/*Posicion fija*
+    left: 15px;/*Posicion izquierda*
+    /*color: rgb(0, 0, 0);
+    display: inline;/*inline-block*
+    text-indent: 1.5em;
+    line-height: 1.2;/*Espacio entre lineas*
+    word-spacing: 7px;/*Espacio entre palabras*
+    text-shadow: rgb(201, 94, 94) 0px 1px 2px;/*Sombra de texto*
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 800;*/
+    /* P FLOAT */
+
+}
+img{
+    float: right
+}
+img:hover{/*: hover Efecto al pasar el mouse*/
+    opacity: 0.9;
+}
+
+
+ul{
+    list-style-type: none;/*Quitar simbolos de lista*/
+    list-style-position: inside;/*Posicion de simbolos de lista*/
+   background-color: #fff;
+   border: solid;
+   border-radius: 4px;
+   padding: 0px;
+}
+li{
+    border-bottom: solid 1px #ddd;
+    padding: 15px;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-last-child(even){/*Selecciona las filas pares*/
+    background-color: #f2f2f2;
+}
+table th{/*Estilo de cabecera colocado de esta manera table es el padre y th es el hijo y esta
+    regla solo funciona cuando estan los dos*/
+    background-color: #4CAF50;
+    color: white;
+    text-align: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding: 12px;
+    padding-bottom: 12px;
+}
+#invisible{
+    display: none;/*Oculta el elemento*/
+}
+
+#over{
+    width: 100px;
+    height: 100px;
+    overflow-x: scroll;/*Oculta el contenido que no quepa en el elemento*/
+}
