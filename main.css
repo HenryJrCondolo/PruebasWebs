@@ -1,9 +1,8 @@
-body {
-  background-image: url("fondo.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
+ 
+ body{
+  background-image: linear-gradient(to right, red,blue, yellow);
+
+} 
 input[type="text"] {
   width: 100%;
   padding: 12px 20px;
@@ -35,7 +34,7 @@ input[type="email"] {
 }
 
 .box {
-  opacity: 0.8;
+  opacity: 0.85;
   border-radius: 5px;
   background-color: white;
   padding: 18px 20px;
@@ -64,13 +63,14 @@ textarea {
   top: 55%; /*Para que se centre verticalmente*/
   left: 50%; /*Para que se centre*/
   transform: translate(-50%, -600%);
+  
 }
 .titulo2 {
   position: absolute;
   font-size: 40px;
-  top: 55%; /*Para que se centre verticalmente*/
+  top: 50%; /*Para que se centre verticalmente*/
   left: 50%; /*Para que se centre*/
-  transform: translate(-50%, -600%);
+  transform: translate(-50%, -50%);
 }
 .color {
   text-align: center;
@@ -79,12 +79,19 @@ textarea {
     to bottom,
     rgb(6, 255, 246) 20%,
     rgb(233, 11, 159) 20%,
-    rgb(107, 1, 128) 80%,
-    rgb(3, 234, 255) 80%
+    rgb(0, 0, 0) 80%,
+    rgb(255, 255, 255) 80%
   );
   color: #000;
   background-clip: text;
-  text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-shadow: 0px 8px 10px rgba(187, 8, 8, 0.9);
+}
+.transaccion{
+  transition: 0.3s 0.1s;/*velocidad de la transicion*/ /*tiempo de espera para realizar transaccion*/
+}
+.transaccion:hover{/*cuando el mouse este encima*/
+  transform: scale(1.03);/*aumenta el tamaño*/
+  background-color: #308533;
 }
