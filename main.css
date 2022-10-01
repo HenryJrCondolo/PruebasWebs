@@ -61,9 +61,7 @@ textarea {
 .titulo {
   position: absolute;
   font-size: 55px;
-  background: linear-gradient(rgb(252, 251, 251), rgb(252, 1, 89));
-  -webkit-background-clip: text;
-  color:transparent;
+  color:red;
   top: 55%; /*Para que se centre verticalmente*/
   left: 50%; /*Para que se centre*/
   transform: translate(-50%, -600%);
