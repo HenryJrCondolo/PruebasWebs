@@ -68,7 +68,7 @@ textarea {
 .color{
   text-align: center;
   
-  background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 80%);
+  background: linear-gradient(to right, rgb(6, 255, 246) 5%, rgb(233, 11, 159) 20%, rgb(107, 1, 128) 50%, rgb(3, 234, 255) 30%);
   background-size: 200% auto;
   
   color: #000;
